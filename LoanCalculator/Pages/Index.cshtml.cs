@@ -41,8 +41,16 @@ namespace LoanCalculator.Pages
         }
 
         //Add a multiply function
+        public void OnPostMultiplyNumbers(int num5, int num6)
+        {
+            product = num5 * num6;
+        }
 
         //Add a divide function
+        public void OnPostDivideNumbers(int num7, int num8)
+        {
+            quotient = num7 * num8;
+        }
 
         //Add anything else and be creative
     }
