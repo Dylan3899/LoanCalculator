@@ -49,10 +49,10 @@ namespace LoanCalculator.Pages
         //Add a divide function
         public void OnPostDivideNumbers(int num7, int num8)
         {
-            quotient = num7 * num8;
+            quotient = num7 / num8;
         }
 
         //Add anything else and be creative
-        //Added something else to code
+        
     }
 }
