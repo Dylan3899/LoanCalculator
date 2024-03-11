@@ -1,0 +1,51 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<html>
+<head>
+    <title>Loan Calculator</title>
+</head>
+    <body>
+
+    <form asp-page-handler="AddNumbers" method="post">
+        <h2>Add Numbers</h2>
+         <div class="text-center">
+           <div class="mb-3">
+               <label for="Input1" class="form-label">Number 1</label>
+               <input type="number" asp-for ="num1" class="form-control" id="Input1" placeholder="Number 1">
+           </div>
+           <div class="mb-3">
+               <label for="Input2" class="form-label">Number 2</label>
+                <input type="number" asp-for="num2" class="form-control" id="Input2" placeholder="Number 2">
+           </div>
+           <div class="input-group mb-3">
+             <span class="input-group-text" id="basic-addon1">Sum</span>
+             <input type="text" class="form-control" asp-for="sum" aria-label="Username" aria-describedby="basic-addon1">
+           </div>
+               <button type="submit" class="btn btn-primary">Add</button>
+           </div>
+    </form>
+    <br /><br />
+    <form asp-page-handler="SubtractNumbers" method="post">
+        <h2>Subtract Numbers</h2>
+        <div class="text-center">
+            <div class="mb-3">
+                <label for="Input3" class="form-label">Number 1</label>
+                <input type="number" asp-for="num3" class="form-control" id="Input3" placeholder="Number 1">
+            </div>
+            <div class="mb-3">
+                <label for="Input4" class="form-label">Number 2</label>
+                <input type="number" asp-for="num4" class="form-control" id="Input4" placeholder="Number 2">
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">Difference</span>
+                <input type="text" class="form-control" asp-for="difference" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            <button type="submit" class="btn btn-primary">Subtract</button>
+        </div>
+    </form>
+    </body>
+</html>
+    
