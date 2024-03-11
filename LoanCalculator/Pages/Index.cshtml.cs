@@ -13,6 +13,13 @@ namespace LoanCalculator.Pages
         public int num3 { get; set; }
         public int num4 { get; set; }
         public int difference { get; set; }
+        public int num5 { get; set; }
+        public int num6 { get; set; }
+        public int product { get; set; }
+        public int num7 { get; set; }
+        public int num8 { get; set; }
+        public int quotient { get; set; }
+        
 
         public IndexModel(ILogger<IndexModel> logger)
         {
