@@ -53,6 +53,7 @@ namespace LoanCalculator.Pages
         }
 
         //Add anything else and be creative
+        //Added anything that's creative
         
     }
 }
