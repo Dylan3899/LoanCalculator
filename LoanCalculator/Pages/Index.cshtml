@@ -46,6 +46,44 @@
             <button type="submit" class="btn btn-primary">Subtract</button>
         </div>
     </form>
+    <br /><br />
+    <form asp-page-handler="MultiplyNumbers" method="post">
+        <h2>Multiply Numbers</h2>
+        <div class="text-center">
+            <div class="mb-3">
+                <label for="Input5" class="form-label">Number 1</label>
+                <input type="number" asp-for="num5" class="form-control" id="Input5" placeholder="Number 1">
+            </div>
+            <div class="mb-3">
+                <label for="Input6" class="form-label">Number 2</label>
+                <input type="number" asp-for="num6" class="form-control" id="Input6" placeholder="Number 2">
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">Product</span>
+                <input type="text" class="form-control" asp-for="product" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            <button type="submit" class="btn btn-primary">Multiply</button>
+        </div>
+    </form>
+    <br /><br />
+    <form asp-page-handler="DivideNumbers" method="post">
+        <h2>Divide Numbers</h2>
+        <div class="text-center">
+            <div class="mb-3">
+                <label for="Input7" class="form-label">Number 1</label>
+                <input type="number" asp-for="num7" class="form-control" id="Input7" placeholder="Number 1">
+            </div>
+            <div class="mb-3">
+                <label for="Input8" class="form-label">Number 2</label>
+                <input type="number" asp-for="num8" class="form-control" id="Input8" placeholder="Number 2">
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">Quotient</span>
+                <input type="text" class="form-control" asp-for="quotient" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            <button type="submit" class="btn btn-primary">Divide</button>
+        </div>
+    </form>
     </body>
 </html>
     
